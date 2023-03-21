@@ -45,7 +45,7 @@
             android:textColor="#A97EDF"
             android:autofillHints="email here"
             android:hint="your full name here"
-            android:background="@null"
+            android:background="@drawable/buttonbaground"
             android:inputType="textPersonName"
             android:paddingLeft="8dp"
             android:paddingRight="9dp"
@@ -74,7 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:hint="your phone number here"
-            android:background="@null"
+            android:background="@drawable/buttonbaground"
             android:textColor="#A97EDF"
             android:inputType="phone"
             android:paddingLeft="8dp"
@@ -107,7 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:autofillHints="email here"
-            android:background="@null"
+            android:background="@drawable/buttonbaground"
             android:hint="your password here"
             android:inputType="textPassword"
             android:paddingLeft="8dp"
@@ -135,12 +135,13 @@
             android:src="@drawable/lock" />
 
 
+
         <EditText
             android:id="@+id/retypepassword"
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:autofillHints="email here"
-            android:background="@null"
+            android:background="@drawable/buttonbaground"
             android:inputType="textPassword"
             android:hint="retype the same password here"
             android:paddingLeft="8dp"

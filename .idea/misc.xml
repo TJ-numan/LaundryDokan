@@ -3,12 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LaundryDokan/app/p25Demo/src/main/res/menu/main.xml" value="0.19583333333333333" />
+        <entry key="..\:/LaundryDokan/app/p25demo/src/main/res/layout/activity_main_printer.xml" value="0.19583333333333333" />
         <entry key="..\:/LaundryDokan/app/src/main/res/drawable-v24/buttonbaground.xml" value="0.17222222222222222" />
         <entry key="..\:/LaundryDokan/app/src/main/res/drawable-v24/buttonbaground2.xml" value="0.17222222222222222" />
         <entry key="..\:/LaundryDokan/app/src/main/res/drawable-v24/buttonbagroundadmin.xml" value="0.17222222222222222" />
         <entry key="..\:/LaundryDokan/app/src/main/res/drawable-v24/buttonbagroundsplash.xml" value="0.14444444444444443" />
         <entry key="..\:/LaundryDokan/app/src/main/res/drawable-v24/shape2.xml" value="0.17222222222222222" />
+        <entry key="..\:/LaundryDokan/app/src/main/res/layout/activity_admin_catagory.xml" value="0.18385416666666668" />
         <entry key="..\:/LaundryDokan/app/src/main/res/layout/activity_login.xml" value="0.18385416666666668" />
+        <entry key="..\:/LaundryDokan/app/src/main/res/layout/activity_main.xml" value="0.1527777777777778" />
+        <entry key="..\:/LaundryDokan/app/src/main/res/layout/activity_print.xml" value="0.18385416666666668" />
         <entry key="..\:/LaundryDokan/app/src/main/res/layout/activity_signup.xml" value="0.18385416666666668" />
         <entry key="..\:/LaundryDokan/app/src/main/res/layout/activity_splash.xml" value="0.12962962962962962" />
       </map>

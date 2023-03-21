@@ -98,9 +98,9 @@
                 android:id="@+id/chekbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/white"
+                android:buttonTint="@color/black"
                 android:text="remeber me"
-                android:textColor="@color/white" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/forgotpass"
@@ -110,7 +110,7 @@
                 android:layout_marginTop="9dp"
                 android:layout_marginRight="8dp"
                 android:text="forgot password"
-                android:textColor="@color/white" />
+                android:textColor="@color/black" />
 
         </RelativeLayout>
 

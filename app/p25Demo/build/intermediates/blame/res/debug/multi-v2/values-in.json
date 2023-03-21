@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "H:\\Programming\\Android-POS\\p25Demo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-in\\values-in.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Ashraf-PC\\.gradle\\caches\\transforms-2\\files-2.1\\0af1d8cb8da2f9e607c7d1a3dd1f7b62\\res\\values-in\\values-in.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "H:\\Programming\\Android-POS\\p25Demo\\build\\intermediates\\res\\merged\\debug\\values-in\\values-in.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Ashraf-PC\\.gradle\\caches\\transforms-2\\files-2.1\\0af1d8cb8da2f9e607c7d1a3dd1f7b62\\res\\values-in\\values-in.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

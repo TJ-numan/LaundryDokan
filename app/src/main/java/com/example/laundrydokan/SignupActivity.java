@@ -1,6 +1,6 @@
 package com.example.laundrydokan;
 
-import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -107,7 +107,7 @@ public class SignupActivity extends AppCompatActivity {
         rootref = FirebaseDatabase.getInstance().getReference();
         rootref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
+            public void onDataChange(DataSnapshot snapshot) {
                 if(!(snapshot.child("Users").child(phone).exists()))
                 {
                     HashMap<String, Object> userdataMap = new HashMap<>();
@@ -118,7 +118,7 @@ public class SignupActivity extends AppCompatActivity {
                     rootref.child("Users").child(phone).updateChildren(userdataMap)
                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
-                                public void onComplete(@NonNull Task<Void> task)
+                                public void onComplete( Task<Void> task)
                                 {
 
                                     if(task.isSuccessful()){
@@ -128,8 +128,8 @@ public class SignupActivity extends AppCompatActivity {
                                         userName.setEnabled(true);
                                         userPassword.setEnabled(true);
                                         userPhone.setEnabled(true);
-                                        //Intent intent = new Intent(SignupActivity.this, HomeActivity.class);
-                                        //startActivity(intent);
+                                        Intent intent = new Intent(SignupActivity.this, MainActivity.class);
+                                        startActivity(intent);
                                         finish();
                                     }
                                     else{
@@ -154,7 +154,7 @@ public class SignupActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+            public void onCancelled( DatabaseError error) {
 
             }
         });

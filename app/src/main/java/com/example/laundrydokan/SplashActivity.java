@@ -52,13 +52,13 @@ public class SplashActivity extends AppCompatActivity {
 
         if(Sessions.getLoginStatusofUser(SplashActivity.this))
         {
-//            Intent intent = new Intent(SplashActivity.this,HomeActivity.class);
-//            startActivity(intent);
-//            finish();
+            Intent intent = new Intent(SplashActivity.this,MainActivity.class);
+            startActivity(intent);
+            finish();
         }
         else if(Sessions.getLoginStatusofAdmin(SplashActivity.this)){
-//            Intent intent = new Intent(SplashActivity.this, AdminCatagoryActivity.class);
-//            startActivity(intent);
+           Intent intent = new Intent(SplashActivity.this, AdminCatagoryActivity.class);
+            startActivity(intent);
             finish();
         }
 

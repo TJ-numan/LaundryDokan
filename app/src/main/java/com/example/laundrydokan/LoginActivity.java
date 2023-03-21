@@ -1,6 +1,5 @@
 package com.example.laundrydokan;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
@@ -118,16 +117,15 @@ public class LoginActivity extends AppCompatActivity {
             AllowAccessToAccount(phone, password);
         }
 
-
-
     }
+
 
     private void AllowAccessToAccount(String phone, String password) {
         final DatabaseReference rootref;
         rootref = FirebaseDatabase.getInstance().getReference();
         rootref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
+            public void onDataChange( DataSnapshot snapshot) {
                 if(snapshot.child(parentDBname).child(phone).exists())
                 {
 
@@ -140,9 +138,9 @@ public class LoginActivity extends AppCompatActivity {
                                 }
                                 Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_LONG).show();
                                 progressbar.setVisibility(View.GONE);
-                               // Intent intent = new Intent(LoginActivity.this, DashBoardActivity.class);
-                                //intent.putExtra("ParentDB",parentDBname);
-                                //startActivity(intent);
+                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                intent.putExtra("ParentDB",parentDBname);
+                                startActivity(intent);
 
                             }
                             else if(parentDBname.equals("Users")){
@@ -151,9 +149,9 @@ public class LoginActivity extends AppCompatActivity {
                                 }
                                 Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_LONG).show();
                                 progressbar.setVisibility(View.GONE);
-                                //Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
+                                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
                                 Prevalent.currentOnlineUser = userData;
-                                //startActivity(intent);
+                                startActivity(intent);
                                 finish();
                             }
 
@@ -166,8 +164,14 @@ public class LoginActivity extends AppCompatActivity {
                             loginbutton.setEnabled(true);
                         }
                     }
+                    else {
+                        Toast.makeText(LoginActivity.this, "Phone Number doesnt match", Toast.LENGTH_SHORT).show();
+                        progressbar.setVisibility(View.GONE);
+                    }
                 }
                 else
+
+
                 {
                     Toast.makeText(LoginActivity.this, "Account with this "+phone+"number does not exist", Toast.LENGTH_LONG).show();
                     progressbar.setVisibility(View.GONE);
@@ -178,7 +182,7 @@ public class LoginActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+            public void onCancelled(DatabaseError error) {
 
             }
         });
